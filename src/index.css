@@ -1,9 +1,10 @@
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   background: #f8f8f8;
+  color: #272d45;
+  font-size: .889rem;
+  line-height: 1.6;
 }
 
 code {
