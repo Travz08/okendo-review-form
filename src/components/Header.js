@@ -9,7 +9,7 @@ export default function Header() {
           <h2>Review</h2>
         </div>
         <div className="header__navigation">
-          <div className="header__navigation__container">
+          <div className="header__navigation__container container">
             <div className="header__navigation__container__step header__navigation__container__step--isActive">
               <span>Review</span>
             </div>

@@ -1,0 +1,36 @@
+.toggle {
+  display: flex;
+
+  &__option {
+    box-sizing: border-box;
+    background-color: #d9d9d9;
+    border: 2px solid #d9d9d9;
+    border-radius: 4px 0 0 4px;
+    min-width: 75px;
+    padding: 8px 16px;
+    text-align: center;
+    transition: background .2s ease;
+
+    &:last-child {
+      border-radius: 0 4px 4px 0;
+      margin-left: 1px;
+    }
+
+    &:hover {
+      background: #c2c2c2;
+      border-color: #c2c2c2;
+      cursor: default;
+    }
+
+    > span {
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+
+    &--active {
+      background-color: #f8ece9;
+      border-color: #f8ece9;
+      color: #000;
+    }
+  }
+}

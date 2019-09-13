@@ -1,0 +1,22 @@
+.rating {
+  &__icon {
+    height: 25px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &--isSelected {
+      color: #ffb829;
+    }
+
+    &--notSelected {
+      color: #e5e5e5;
+    }
+
+    &__selecting {
+      height: 25px;
+      color: #ffb829;
+    }
+  }
+}

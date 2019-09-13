@@ -1,3 +1,116 @@
 .reviewForm {
-  
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+
+  > main {
+    flex: 1 0 auto;
+  }
+
+  &__container {
+    padding: 0 16px;
+
+    &__card {
+      padding: 16px;
+      background-color: #fff;
+      border-radius: 4px;
+      box-shadow: 0 1px 4px 0 rgba(0,0,0,.14);
+      overflow: hidden;
+      &__item {
+        margin-bottom: 16px;
+
+        &__label {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+
+  &__input {
+    &__title {
+      box-sizing: border-box;
+      background-color: #fff;
+      background-image: none;
+      border: 1px solid #c2c2c2;
+      border-radius: 4px;
+      font-size: .889rem;
+      height: 34px;
+      max-width: 100%;
+      padding: 6px 12px;
+      transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+      width: 100%;
+
+      &::placeholder {
+        color: #c2c2c2;
+      }
+    }
+
+    &__review {
+      box-sizing: border-box;
+      background-color: #fff;
+      background-image: none;
+      border: 1px solid #c2c2c2;
+      border-radius: 4px;
+      display: block;
+      padding: 6px 12px;
+      transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+      width: 100%;
+      font-family: inherit;
+      font-weight: inherit;
+      font-size: .889rem;
+      line-height: inherit;
+      &::placeholder {
+        color: #c2c2c2;
+      }
+    }
+  }
+
+  &__footer {
+    box-sizing: border-box;
+    margin-top: 32px;
+
+    @media (min-width: 768px) {
+      margin: 32px auto 16px;
+      max-width: 100%;
+      padding: 0 16px;
+      width: 768px;
+    }
+
+    &__terms {
+      box-sizing: border-box;
+      text-align: center;
+      margin-bottom: 8px;
+      padding: 0 16px;
+
+      > span {
+        > a {
+          color: #272d45;
+          text-decoration: none;
+          &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    &__button {
+      box-sizing: border-box;
+      background-color: #f8ece9;
+      border: 1px solid #f8ece9;
+      color: #000;
+      border-radius: 4px;
+      font-size: 1.266rem;
+      text-align: center;
+      line-height: 3.3;
+      padding: 0 24px;
+      width: 100%;
+      text-transform: capitalize;
+      font-family: inherit;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
 }
