@@ -38,17 +38,17 @@ export default function Rating() {
   }
 
   const stars = [...Array(rateLimit)].map((v, i) => {
-    const isRated = rate.rating >= i && rate.rating != null ? 'isSelected' : 'notSelected';
+  const isRated = rate.rating >= i && rate.rating != null ? 'isSelected' : 'notSelected';
 
     return (
       <label
         key={i}
         onClick={() => starRate(i)}
-        onMouseOver={() => starHover(i)}
-        onMouseOut={() => starLeave()}
+        onMouseEnter={() => starHover(i)}
+        onMouseLeave={() => starLeave()}
       >
         {
-          rate.isSelecting && rate.rating < (i)
+          rate.isSelecting && rate.rating < i
           ? <StarRegular className={`rating__icon__selecting`}/>
           : <StarSolid className={`rating__icon rating__icon--${isRated}`} />
         }
@@ -58,7 +58,7 @@ export default function Rating() {
 
   return (
     <div className="rating">
-      {stars}
+      <span>{stars}</span>
     </div>
   )
 };
