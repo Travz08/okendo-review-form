@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { ReactComponent as StarSolid } from '../assets/icons/star-solid.svg'
 import { ReactComponent as StarRegular } from '../assets/icons/star-regular.svg'
 
-
-
 export default function Rating() {
   const rateLimit = 5;
   const [rate, setRate] = useState({
